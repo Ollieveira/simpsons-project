@@ -1,0 +1,148 @@
+:root {
+  font-size: 16px;
+  font-family: 'Cherry Bomb One', cursive;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+header {
+  background-color: #69c0ea;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 25px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.play-button {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  list-style: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  font-size: 2rem;
+}
+
+li:hover {
+  color: #ffd520;
+  cursor: pointer;
+}
+
+main {
+  background-color: #f6a2ac;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.images img {
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #69c0ea;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px 150px;
+}
+
+.social-medias {
+  margin-right: 100px;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*--------------------- Responsividade ------------------------*/
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  main {
+    height: 2000px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  footer {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  .social-medias {
+    margin-right: 0;
+  }
+}

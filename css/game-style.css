@@ -1,0 +1,80 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-image: linear-gradient(#ffd520, #69c0ea);
+}
+.back-button {
+  position: absolute;
+  font-size: 50px;
+  padding-left: 50px;
+  text-decoration: none;
+  color: #000000;
+}
+.game-board {
+  width: 68vw;
+  height: 76vh;
+  border: 1px solid #333;
+  border-radius: 1%;
+  margin: 0 auto;
+
+  background-image: url(../assets/the-simpsons-road.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-clip: border-box;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.alien {
+  position: absolute;
+  bottom: 0;
+  width: 125px;
+  height: 60px;
+  object-fit: cover;
+  animation: alien-animation 2s infinite linear;
+}
+
+@keyframes alien-animation {
+  from {
+    right: -125px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.homer {
+  position: absolute;
+  bottom: 0px;
+  height: 150px;
+  padding-left: 30px;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  60% {
+    bottom: 100px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
